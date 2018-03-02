@@ -1,5 +1,6 @@
 # The Bible Decentralised
 Decentralised Bible App using IPFS
+
 https://gateway.ipfs.io/ipns/QmXmSMLprg1fxfKpns46kSYKBbZTb5puxX2eYCsrnCkhDT
 
 This is a decentralised web-app (Dapp). The website can be uploaded using IPFS, which is a decentralised storage. So, there is no central server or hosting, but just different nodes who all serve a bit of this website. 
