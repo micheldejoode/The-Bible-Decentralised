@@ -12,6 +12,8 @@ The website itself allso makes use of IPFS to load the different books of the Bi
 3. Go to the command prompt or open a Node.js command prompt, then type `ipfs daemon`
 4. Open index.html
 
+
+
 That's it. 
 
 This website is just an example on how to load IPFS files using javascript. Use it to read the Bible (very interesting) or to learn to write decentralised apps. Not all Bible books are available right now, more books will be added. 
