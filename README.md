@@ -17,6 +17,14 @@ The website itself allso makes use of IPFS to load the different books of the Bi
 The website is located at: 
 https://gateway.ipfs.io/ipns/QmXmSMLprg1fxfKpns46kSYKBbZTb5puxX2eYCsrnCkhDT
 
+## Do it yourself
+
+If you want to upload your own version of this website (or any website) to IPFS, do the following:
+
+1. Go to the command prompt
+2. `ipfs add -r mysite` where MYSITE is the path to your website directory. 
+3. you will see the different hashes of the files. The last hash is the one which directs to your site itself.
+
 This website is just an example on how to load IPFS files using javascript. Use it to read the Bible (very interesting) or to learn to write decentralised apps. Not all Bible books are available right now, more books will be added. 
 
 ## Roadmap
