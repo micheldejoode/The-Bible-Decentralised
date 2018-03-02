@@ -24,6 +24,12 @@ If you want to upload your own version of this website (or any website) to IPFS,
 1. Go to the command prompt
 2. `ipfs add -r mysite` where MYSITE is the path to your website directory. 
 3. you will see the different hashes of the files. The last hash is the one which directs to your site itself.
+4. if you want other people to visit your IPFS website, you can give them this url: ipfs.io/ipfs/yourhashcode
+5. But everytime you update your website, you will get a different hash. That's where IPNS comes in. 
+6. In the command prompt, do: `publish name yourhashcode`
+7. Now you get another hashcode, that's the url of your website. It becomes: ipfs.io/ipns/otherhashcode.
+
+Everytime you will do a `publish name hashcode` you will bind the latest hashcode of your website to the IPNS hashcode, which will be the same everytime. You can give that url to other people to view your website.
 
 This website is just an example on how to load IPFS files using javascript. Use it to read the Bible (very interesting) or to learn to write decentralised apps. Not all Bible books are available right now, more books will be added. 
 
