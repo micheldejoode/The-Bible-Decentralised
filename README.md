@@ -3,9 +3,19 @@ Decentralised Bible App using IPFS
 
 https://gateway.ipfs.io/ipns/QmXmSMLprg1fxfKpns46kSYKBbZTb5puxX2eYCsrnCkhDT
 
-This is a decentralised web-app (Dapp). The website can be uploaded using IPFS, which is a decentralised storage. So, there is no central server or hosting, but just different nodes who all serve a bit of this website. 
+This is a decentralised Bible web-app (Dapp). The website can be uploaded using IPFS, which is a decentralised storage. So, there is no central server or hosting, but just different nodes who all serve a bit of this website. 
 
-The website itself allso makes use of IPFS to load the different books of the Bible. The Bible books all have their own hashcode in IPFS, you can find the hashcodes in the js code. The Bible books are stored in JSON format. This way, everybody can make a website which loads those Bible Books. 
+The website itself also makes use of IPFS to load the different books of the Bible. The Bible books all have their own hashcode in IPFS, you can find the hashcodes below. The Bible books are stored in JSON format. This way, everybody can make a website which loads those Bible Books. 
+
+The used Bible version is the King James Bible. 
+
+To get IPFS work in javascript, this great library is used:
+
+https://github.com/pelle/browser-ipfs
+
+Bootstrap 4.0 is used for the grid etc.
+
+https://getbootstrap.com/
 
 ## Install
 
@@ -32,6 +42,12 @@ If you want to upload your own version of this website (or any website) to IPFS,
 Everytime you will do a `publish name hashcode` you will bind the latest hashcode of your website to the IPNS hashcode, which will be the same everytime. You can give that url to other people to view your website.
 
 ## Bible book hashcodes
+
+These are the hashcodes of the Bible books. You can view them using an IPFS node by this command: `ipfs cat hashcode`
+Or you can view them on ipfs.io/ipfs/hashcode (example: ipfs.io/ipfs/QmR6fYeRLJ7cR4z19xxnWuthLrurgybkQgarv8CYJmTvoa)
+
+The books are in JSON format.
+
 Genesis:"QmR6fYeRLJ7cR4z19xxnWuthLrurgybkQgarv8CYJmTvoa"
 Exodus:"QmfZra1jA7SocAdvjkfTfx6uCokYAPADPfR1sicyoXkSwK"
 1 John:"QmPWM2CJ9RS7BBs9ccqX4K11xGnoSk5nKM5GNmQ3kVW1AM"
