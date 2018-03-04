@@ -1,27 +1,33 @@
-//search for an IPFS node at 127.0.0.1:5001, so make sure youre running an IPFS node 
-ipfs.setProvider();
-
 //load Genesis by default
-getData("QmNroJLJ9jgahFbUtNmgFg2V3jpS2PDcShgaFYGmrC1hEB");
+getData("./books/Genesis.json");
 
-function getData(hashcode) {
+function loadJSON(book,callback) {   
+    
+    var xobj = new XMLHttpRequest();
+        xobj.overrideMimeType("application/json");
+    xobj.open('GET', book, true); // Replace 'my_data' with the path to your file
+    xobj.onreadystatechange = function () {
+          if (xobj.readyState == 4 && xobj.status == "200") {
+            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+            callback(xobj.responseText);
+          }
+    };
+    xobj.send(null);  
+ }
+ 
+ 
 
-//get file from ipfs with the hashcode	
-ipfs.catText(hashcode, function (err, data) {
-      
-      	  
-      if (err) {
-        return console.error('Error - ipfs files cat', err, res)
-      }
-	  
-       
-	  var temp = data.toString(); 
-	  var obj = eval(temp); //make object from json
-	  
+
+
+function getData(location) {
+    document.getElementById("output").innerHTML = "Loading Bible book, please wait";
+    loadJSON(location,function(response) {
+	// Parse JSON string into object
+    var obj = JSON.parse(response);
+	      
       var chapter = obj[1].VerseName.split(":");
       chapter[0] = parseInt(chapter[0]);
 	  
-	    
 	  document.getElementById("chapters").innerHTML = "<a id=\"" + chapter[0] + "\"" + "class=\"ChapNumber\"" + " href=\"#\">" + chapter[0] + "</a>" + " ";	  
       var temp;
 	  
@@ -55,7 +61,8 @@ ipfs.catText(hashcode, function (err, data) {
 	// load first chapter of Bible Book
 	loadChapter(1,obj)
 	
-	})//end ipfs.catText
+	});
+	
 }//end function getData
 
 function loadChapter(ChapterNumber,BibleText) {
@@ -69,7 +76,7 @@ function loadChapter(ChapterNumber,BibleText) {
 	      
 	    if (ChapterNumber == tijdelijk) {
 			document.getElementById("output").innerHTML += BibleText[x].VerseName + " " + BibleText[x].Verse + "<br>";
-			//console.log(BibleText[x].Verse)
+			
 		}
 	  
 		
@@ -85,10 +92,9 @@ function loadChapter(ChapterNumber,BibleText) {
           if(e.className && e.className.indexOf('Books')!=-1)
 				{
 				getData(list[e.id]);
-                console.log("Get Bible Book"+e.id)	
+                console.log("Get Bible Book: "+list[e.id])	
 				}
 		  }
 		  
         }
-		  /*
-          */
+		  
