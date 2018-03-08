@@ -1,5 +1,5 @@
 //load Genesis by default
-getData("./books/Genesis.json");
+getData("./books/OT/Genesis.json");
 
 function loadJSON(book,callback) {   
     
