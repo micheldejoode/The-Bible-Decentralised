@@ -30,8 +30,6 @@ https://getbootstrap.com/
 3. Go to the command prompt or open a Node.js command prompt, then type `ipfs daemon`
 4. Open index.html
 
-The website is located at: 
-https://gateway.ipfs.io/ipns/QmXmSMLprg1fxfKpns46kSYKBbZTb5puxX2eYCsrnCkhDT
 
 ## Do it yourself
 
