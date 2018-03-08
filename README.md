@@ -7,6 +7,8 @@ or
 
 https://gateway.ipfs.io/ipns/QmYN9TQtR8JGaXqMwv3893BwpLqEEPLHjDm7TG3ue5KkSq / https://ipfs.io/ipfs/QmP2FcAk6rrPHsuBcDieyZ7XiiStjssnp4tAd3SzJjrb1q/(no running node needed :)
 
+The IPNS links are often slow, the IPFS links are faster, but changes everytime there is an update for the app.
+
 This is a decentralised Bible web-app (Dapp). The website can be uploaded using IPFS, which is a decentralised storage. So, there is no central server or hosting, but just different nodes who all serve a bit of this website. 
 
 The website itself also makes use of IPFS to load the different books of the Bible. The Bible books all have their own hashcode in IPFS, you can find the hashcodes below. The Bible books are stored in JSON format. This way, everybody can make a website which loads those Bible Books. 
