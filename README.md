@@ -5,7 +5,7 @@ https://gateway.ipfs.io/ipns/QmXmSMLprg1fxfKpns46kSYKBbZTb5puxX2eYCsrnCkhDT / ht
 
 or
 
-https://gateway.ipfs.io/ipns/QmYN9TQtR8JGaXqMwv3893BwpLqEEPLHjDm7TG3ue5KkSq / https://ipfs.io/ipfs/QmP2FcAk6rrPHsuBcDieyZ7XiiStjssnp4tAd3SzJjrb1q/(no running node needed :)
+https://gateway.ipfs.io/ipns/QmYN9TQtR8JGaXqMwv3893BwpLqEEPLHjDm7TG3ue5KkSq / https://ipfs.io/ipfs/QmP2FcAk6rrPHsuBcDieyZ7XiiStjssnp4tAd3SzJjrb1q (no running node needed :)
 
 The IPNS links are often slow, the IPFS links are faster, but changes everytime there is an update for the app.
 
