@@ -1,7 +1,13 @@
 # The Bible Decentralised
 Decentralised Bible App using IPFS
 
-https://gateway.ipfs.io/ipns/QmXmSMLprg1fxfKpns46kSYKBbZTb5puxX2eYCsrnCkhDT
+https://gateway.ipfs.io/ipns/QmXmSMLprg1fxfKpns46kSYKBbZTb5puxX2eYCsrnCkhDT / https://ipfs.io/ipfs/QmdzQL27Z418y4Sihir1sw6ffkxrLdFrD1SFyi1Thb4Nun (you will need a running IPFS server for this)
+
+or
+
+https://gateway.ipfs.io/ipns/QmYN9TQtR8JGaXqMwv3893BwpLqEEPLHjDm7TG3ue5KkSq / https://ipfs.io/ipfs/QmP2FcAk6rrPHsuBcDieyZ7XiiStjssnp4tAd3SzJjrb1q/(no running node needed :)
+
+The IPNS links are often slow, the IPFS links are faster, but changes everytime there is an update for the app.
 
 This is a decentralised Bible web-app (Dapp). The website can be uploaded using IPFS, which is a decentralised storage. So, there is no central server or hosting, but just different nodes who all serve a bit of this website. 
 
@@ -48,9 +54,19 @@ Or you can view them on ipfs.io/ipfs/hashcode (example: ipfs.io/ipfs/QmR6fYeRLJ7
 
 The books are in JSON format.
 
-Genesis:"QmR6fYeRLJ7cR4z19xxnWuthLrurgybkQgarv8CYJmTvoa"
-Exodus:"QmfZra1jA7SocAdvjkfTfx6uCokYAPADPfR1sicyoXkSwK"
-1 John:"QmPWM2CJ9RS7BBs9ccqX4K11xGnoSk5nKM5GNmQ3kVW1AM"
+    `
+    Genesis:"QmR6fYeRLJ7cR4z19xxnWuthLrurgybkQgarv8CYJmTvoa",
+		Exodus:"QmfZra1jA7SocAdvjkfTfx6uCokYAPADPfR1sicyoXkSwK",
+		Leviticus:"Qme2b3SUPbaeuafQSeosmwg3qG2k5cAp7Wwm8ZasiGaYJP",
+		Numbers:"QmZQ7PFfo5vByr5eHQu87jjQMTxFa2wsoGvNbgZKBLytG3",
+		Deuteronomy:"QmWXPtCJzeC5g8SuHtKBaQXuHxCTbqFwJ1B3pbeZSgvbJx",
+		Matthew:"QmW56MEx7QhGzfA9QkSdQw64kNPygs3x4hpLxtcwp6EpvU",
+		Mark:"QmXnHCA3gmPvMdSArnR9iCxMFjhwejeB1iQi3k5aom1ijr",
+		Luke:"QmZNSJt6uJkvdGQEVDH8K62qoMgTwurDaBFJRJ1KtJ7PoT",
+		John:"QmWTgHETS6Ypdt9sTS9S7L8jjBLnTwSZtLzoQA5Z46PR7j",
+		Acts:"QmeJTXss2TWdhEoWTG8Nq3fJt6MdMWfKYA9jPDHWhGZM2D",
+		"1 John":"QmPWM2CJ9RS7BBs9ccqX4K11xGnoSk5nKM5GNmQ3kVW1AM"
+		`
 
 This website is just an example on how to load IPFS files using javascript. Use it to read the Bible (very interesting) or to learn to write decentralised apps. Not all Bible books are available right now, more books will be added. 
 
