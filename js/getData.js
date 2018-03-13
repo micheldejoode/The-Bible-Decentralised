@@ -1,21 +1,24 @@
 //search for an IPFS node at 127.0.0.1:5001, so make sure youre running an IPFS node 
-ipfs.setProvider();
+//ipfs.setProvider();
+//var ipfs = new IPFS({ host: 'ipfs.infura.io', protocol: 'https' });
 
+var ipfs = new IPFS();
 //load Genesis by default
-getData("QmNroJLJ9jgahFbUtNmgFg2V3jpS2PDcShgaFYGmrC1hEB");
+getData("QmR6fYeRLJ7cR4z19xxnWuthLrurgybkQgarv8CYJmTvoa");
+
 
 function getData(hashcode) {
-
+      
 //get file from ipfs with the hashcode	
-ipfs.catText(hashcode, function (err, data) {
+ipfs.cat(hashcode, function (err, datasource) {
       
       	  
       if (err) {
-        return console.error('Error - ipfs files cat', err, res)
+        
+		return console.error('Error - ipfs files cat', err, res)
       }
 	  
-       
-	  var temp = data.toString(); 
+      var temp = datasource.toString(); 
 	  var obj = eval(temp); //make object from json
 	  
       var chapter = obj[1].VerseName.split(":");
@@ -79,13 +82,13 @@ function loadChapter(ChapterNumber,BibleText) {
 
 // Wait for the page to load first
         window.onload = function() {
-          		  
-          document.onclick= function(e){
+          
+		  document.onclick= function(e){
 		  e=window.event? event.srcElement: e.target;
           if(e.className && e.className.indexOf('Books')!=-1)
 				{
 				getData(list[e.id]);
-                console.log("Get Bible Book"+e.id)	
+                console.log("Get Bible Book: "+e.id)	
 				}
 		  }
 		  
