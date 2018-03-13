@@ -1,11 +1,15 @@
 # The Bible Decentralised
 Decentralised Bible App using IPFS
 
-https://gateway.ipfs.io/ipns/QmXmSMLprg1fxfKpns46kSYKBbZTb5puxX2eYCsrnCkhDT / https://ipfs.io/ipfs/QmdzQL27Z418y4Sihir1sw6ffkxrLdFrD1SFyi1Thb4Nun (you will need a running IPFS server for this)
+https://gateway.ipfs.io/ipns/QmXmSMLprg1fxfKpns46kSYKBbZTb5puxX2eYCsrnCkhDT / https://ipfs.io/ipfs/QmRzBT3H47T2vES8A5CbyTFoj9oovk1CgGN62dtpZau7up 
+
+This version looks for a running IPFS node. If no node is available, it uses ipfs.infure.io as gateway.
 
 or
 
-https://gateway.ipfs.io/ipns/QmYN9TQtR8JGaXqMwv3893BwpLqEEPLHjDm7TG3ue5KkSq / https://ipfs.io/ipfs/QmP2FcAk6rrPHsuBcDieyZ7XiiStjssnp4tAd3SzJjrb1q (no running node needed :)
+https://gateway.ipfs.io/ipns/QmYN9TQtR8JGaXqMwv3893BwpLqEEPLHjDm7TG3ue5KkSq / https://ipfs.io/ipfs/Qmb8oufPrdDFNyCFj1Uy9bTavHUSvv3USCwmvN5AVxPLuB (no running node needed :)
+
+This version just loads the Bible book from local JSON files.
 
 The IPNS links are often slow, the IPFS links are faster, but changes everytime there is an update for the app.
 
