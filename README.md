@@ -1,15 +1,19 @@
 # The Bible Decentralised
 Decentralised Bible App using IPFS
 
+There a two versions of this app. 
+
+IPFS Version (master branche):
 https://gateway.ipfs.io/ipns/QmXmSMLprg1fxfKpns46kSYKBbZTb5puxX2eYCsrnCkhDT / https://ipfs.io/ipfs/QmRzBT3H47T2vES8A5CbyTFoj9oovk1CgGN62dtpZau7up 
 
-This version looks for a running IPFS node. If no node is available, it uses ipfs.infure.io as gateway.
+This version looks for a running IPFS node. If no node is available, it uses ipfs.infure.io as gateway to load the Bible Books.
 
-or
+Local version (no-node branch): 
+https://gateway.ipfs.io/ipns/QmYN9TQtR8JGaXqMwv3893BwpLqEEPLHjDm7TG3ue5KkSq / https://ipfs.io/ipfs/Qmb8oufPrdDFNyCFj1Uy9bTavHUSvv3USCwmvN5AVxPLuB 
 
-https://gateway.ipfs.io/ipns/QmYN9TQtR8JGaXqMwv3893BwpLqEEPLHjDm7TG3ue5KkSq / https://ipfs.io/ipfs/Qmb8oufPrdDFNyCFj1Uy9bTavHUSvv3USCwmvN5AVxPLuB (no running node needed :)
+This version just loads the Bible book from local JSON files. I uploaded it on IPFS, so it's still a Dapp, but the app itself doesn't use IPFS to load files. 
 
-This version just loads the Bible book from local JSON files.
+***
 
 The IPNS links are often slow, the IPFS links are faster, but changes everytime there is an update for the app.
 
@@ -21,7 +25,7 @@ The used Bible version is the King James Bible.
 
 To get IPFS work in javascript, this great library is used:
 
-https://github.com/pelle/browser-ipfs
+https://github.com/SilentCicero/ipfs-mini
 
 Bootstrap 4.0 is used for the grid etc.
 
@@ -29,10 +33,13 @@ https://getbootstrap.com/
 
 ## Install
 
+Both versions works out of the box, but if you can run an IPFS node, it probably runs faster.
+
 1. Download the files from Github.
-2. At this moment you need a local IPFS node to make this website work. See https://ipfs.io/docs/install/ for instructions.
+2. You can chose to run an IPFS node, but it's not necessary. If you want to, see https://ipfs.io/docs/install/ for instructions.
 3. Go to the command prompt or open a Node.js command prompt, then type `ipfs daemon`
 4. Open index.html
+5. if it doesn't work, make sure youre running a HTTP server.
 
 
 ## Do it yourself
@@ -74,6 +81,6 @@ This website is just an example on how to load IPFS files using javascript. Use 
 
 ## Roadmap
 
-1. load ipfs node from the website itself using ipfs.js. The problem at this moment is that automatic peer discovery doesn't work well. It works sometimes though, I will post an example soon. 
+1. ~~load ipfs node from the website itself using ipfs.js. The problem at this moment is that automatic peer discovery doesn't work well. It works sometimes though.~~
 2. add all Bible books
 3. GZIP the Bible books, which could result in faster loading
