@@ -9,7 +9,7 @@ https://gateway.ipfs.io/ipns/QmXmSMLprg1fxfKpns46kSYKBbZTb5puxX2eYCsrnCkhDT / ht
 This version looks for a running IPFS node. If no node is available, it uses ipfs.infure.io as gateway to load the Bible Books.
 
 Local version (no-node branch): 
-https://gateway.ipfs.io/ipns/QmYN9TQtR8JGaXqMwv3893BwpLqEEPLHjDm7TG3ue5KkSq / https://ipfs.io/ipfs/QmentMjBCanLC2fpyjm9Smq7i4vg8MGHp3FXjL9XmENUcz
+https://gateway.ipfs.io/ipns/QmYN9TQtR8JGaXqMwv3893BwpLqEEPLHjDm7TG3ue5KkSq / https://ipfs.io/ipfs/QmPoY3MKwUjsvC3vN3qiGLGpMTj24RPsDHk14z2QpZkcna
 
 This version just loads the Bible book from local JSON files. I uploaded it on IPFS, so it's still a Dapp, but the app itself doesn't use IPFS to load files. 
 
