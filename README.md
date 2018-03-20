@@ -136,3 +136,4 @@ This website is just an example on how to load IPFS files using javascript. Use 
 1. ~~load ipfs node from the website itself using ipfs.js. The problem at this moment is that automatic peer discovery doesn't work well. It works sometimes though.~~
 2. ~~add all Bible books~~
 3. GZIP the Bible books, which could result in faster loading
+4. make this website permanent available on IPFS using own node or IPFS Cluster or something like that
