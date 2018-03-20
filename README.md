@@ -4,7 +4,7 @@ Decentralised Bible App using IPFS
 There a two versions of this app. 
 
 IPFS Version (master branche):
-https://gateway.ipfs.io/ipns/QmXmSMLprg1fxfKpns46kSYKBbZTb5puxX2eYCsrnCkhDT / https://ipfs.io/ipfs/QmbN8Th1mhx4iUi5i5iSAeaRWqGQhdEuBZbCD7BPMijN8w 
+https://gateway.ipfs.io/ipns/QmXmSMLprg1fxfKpns46kSYKBbZTb5puxX2eYCsrnCkhDT / https://ipfs.io/ipfs/QmX88rBmyvwZSyejuGb2XjBAiPoNtJWEPGMdJHV5xwBNJB 
 
 This version looks for a running IPFS node. If no node is available, it uses ipfs.infure.io as gateway to load the Bible Books.
 
