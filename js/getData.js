@@ -91,8 +91,11 @@ function loadChapter(ChapterNumber,BibleText) {
 		  e=window.event? event.srcElement: e.target;
           if(e.className && e.className.indexOf('Books')!=-1)
 				{
-				getData(list[e.id]);
-                console.log("Get Bible Book: "+list[e.id])	
+				//console.log("./books/"+e.id.substring(0, 2) + "/" + e.id.substring(2)+".json");
+				//"./books/OT/Genesis.json"
+				//getData(list[e.id]);
+				getData("./books/"+e.id.substring(0, 2) + "/" + e.id.substring(2)+".json");
+                console.log("Get Bible Book: "+e.id.substring(2))	
 				}
 		  }
 		  
